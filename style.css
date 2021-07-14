@@ -71,6 +71,8 @@ header button{
 margin-left: 156px;}
 .blogs:hover{
     background-color: rgb(82, 82, 247);
+    color: rgb(54, 58, 55);
+    
 }
 .blog1 a{
     text-decoration: none;
@@ -121,9 +123,7 @@ grid-column-gap: 27px;
 /*-------------------------
  end blog
  ----------------------- */
- .end-section{
-     background-color: ;
- }
+ 
  .end-blogs{
      display: flex;
     margin-top: 100px;
@@ -133,6 +133,8 @@ grid-column-gap: 27px;
     width: 466px;
     height: 306px;
     margin-left: 182px;
+    margin-right: 50px;
+
 }
 .end-blog2{
     width: 567px;
@@ -164,3 +166,71 @@ grid-column-gap: 27px;
     color:  #FFFFFF; 
     
  }
+ /*------------------- 
+ footer blog
+ ------------------- */
+
+ 
+ .football-logo{
+    width: 483.87px;
+    margin-left: 450px;
+    margin-bottom: 0px;
+
+    
+ }
+ .football-logo img{
+     width: 100%;
+ }
+ 
+ .icons a{
+    color: rgb(75, 75, 75);
+   text-decoration: none;
+   margin-left: 20px;
+   margin-bottom: 20px;
+
+
+}
+.icons{
+   margin-left: 590px;}
+   footer{
+       color: black;
+       text-align: center;
+       font-size: 15px;
+       margin-top: 15px;
+       margin-bottom: 50px;
+   }
+
+
+
+/*-------------------
+ media query
+ ---------------------- */
+
+@media only screen and (max-width:688px){
+    .container{
+        width: 100%;
+    }
+
+    
+    .players, .blogs, .end-blogs, header, .blog-logo, footer{
+         display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    }
+    .blog1, .blog2, .player, .football-logo{
+        flex-direction: column;
+    }
+}
+  @media only screen and (min-width:688px) and (max-width:992px) {
+    .players, .blogs, .end-blogs, header, .blog-logo, footer{
+        display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   }
+   .blog1, .blog2, .player, .football-logo{
+       flex-direction: column;
+   }
+   header{
+       justify-content: center;
+   }
+
+   
+}  
